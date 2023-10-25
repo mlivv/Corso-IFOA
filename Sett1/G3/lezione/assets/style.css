@@ -1,0 +1,39 @@
+h1 {
+  color: #ff3541;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-weight: lighter;
+}
+
+/* Per fare il commento */
+
+/*Selettore di discendenti */
+#discendenti h4 {
+  text-align: right;
+}
+
+/*Pseudoclassi*/
+a:hover {
+  color: red;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 30%;
+  margin: 0 auto;
+}
+
+td {
+  border: 2px solid black;
+}
+
+table tr:nth-child(2) {
+    background-color: aqua;
+}
+
+#elenco li::before{
+    content: 'Studente ';
+}
