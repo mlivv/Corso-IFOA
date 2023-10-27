@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+#logo {
+  height: 65px;
+  width: auto;
+}
+
+header p {
+  font-size: 15px;
+  background-color: #fdfbf1;
+  padding: 1em;
+  color: #0b5251;
+  border-top: 2px solid yellow;
+}
+
+.container {
+  background-color: yellow;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+div h1{
+    text-align:center;
+    margin-left:90px;
+    margin-right:90px;
+}
+
+main p {
+  text-align: left;
+}
+
+#focaccia {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 13px;
+  color: grey;
+}
