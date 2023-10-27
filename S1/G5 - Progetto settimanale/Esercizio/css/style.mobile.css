@@ -1,45 +1,95 @@
-body{
-    margin:0 auto;
-    font-family: 'Open Sans', sans-serif;
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
 }
+
+/* HEADER */
 
 header {
-    background: black;
-    text-align: center;
-    margin: 0 auto;
-    padding: 25px;
-  }
-
-  section{
-    background: url(../images/banner.jpg);
-    background-size: 100%;
-    width:auto;
-    height:28em;
+  background: black;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px;
 }
 
-.testoPrincipale{
-    border: 10px;
-    padding:100px;
-    text-align: center;
+/* MAIN */
+
+#primaSezione {
+  background: url(../images/banner.jpg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  width: auto;
+  padding: 50px;
+  font-size: 175%;
+  text-align: center;
 }
 
-.testoPrincipale h1{
-    color:#25a2c3;
+#primaSezione h1 {
+  color: #25a2c3;
 }
 
-fieldset{
-    padding-top:15px;
-    border:none;
-    text-align: center;
+.button {
+  font-size: large;
+  letter-spacing: 2px;
+  background-color: #f04c2f;
+  color: white;
+  border-radius: 8px;
+  border-style: none;
+  height: 70px;
+  width: 220px;
+  margin: 0;
+  text-align: center;
 }
 
-button{
-    background-color: #f04c2f;
-    color:white;
-    border-radius: 3px;
-    border: none;
-    height: 40px;
-    width: 135px;
-    margin:0;
-    text-align: center;
+.button:hover {
+  background-color: #d13a20;
+}
+
+.secondaSezione {
+  background-color: white;
+  text-align: center;
+  margin-top: 0 auto;
+  padding: 25px 38px 25px 38px;
+  font-size: 150%;
+}
+
+.secondaSezione h3 {
+  color: #25a2c3;
+}
+
+.secondaFoto img {
+  border-radius: 350px;
+}
+
+.sezioneCitazione {
+  background-color: #e22d0e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+.quadrati {
+  text-align: center;
+  margin: 38px;
+  border: solid 1px;
+  border-color: lightgray;
+  border-radius: 4px;
+  height: 35em;
+  overflow: hidden;
+}
+
+.quadrati h3 {
+  color: #25a2c3;
+}
+
+footer {
+  margin: 0 auto;
+  background: #25a2c3;
+  text-align: center;
+  padding: 25px;
+  color:white;
+  font-size: 150%;
 }
