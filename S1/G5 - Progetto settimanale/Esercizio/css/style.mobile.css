@@ -71,17 +71,19 @@ header {
   font-size: 150%;
 }
 
-.quadrati {
+article {
   text-align: center;
   margin: 38px;
   border: solid 1px;
   border-color: lightgray;
   border-radius: 4px;
   height: 35em;
+  max-height: 550px;
   overflow: hidden;
+  font-size: 125%;
 }
 
-.quadrati h3 {
+article h3 {
   color: #25a2c3;
 }
 
