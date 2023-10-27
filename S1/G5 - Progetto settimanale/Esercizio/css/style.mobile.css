@@ -1,29 +1,20 @@
-/* Your styles here */
-
-/*BODY*/
 body{
     margin:0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 
-
-/*HEADER */
-
 header {
-  background: black;
-  text-align: left;
-  margin: 0 auto;
-  padding: 10px;
-}
+    background: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+  }
 
-/*MAIN*/
-
-section{
+  section{
     background: url(../images/banner.jpg);
     background-size: 100%;
     width:auto;
     height:28em;
-
 }
 
 .testoPrincipale{
@@ -52,8 +43,3 @@ button{
     margin:0;
     text-align: center;
 }
-
-/* MAIN */
-
-
-/*FOOTER*/
