@@ -13,9 +13,9 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// (string) è una fila di parole
+// (string) è una fila senza specifiche
 // (number) valore numerico
-// (boolean) 
+// (boolean) valore vero o falso
 // (null) è una keyword che indica l'assenza intenzionale di un valore
 // (undefined) è una keyword che indica l'assenza di un valore che si aggiungerà in futuro
 
@@ -24,7 +24,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let nome = 'Milena';
+let nome = "Milena";
 console.log(nome);
 
 /* ESERCIZIO 3
@@ -35,7 +35,7 @@ console.log(nome);
 let a = 12;
 let b = 20;
 let somma = a + b;
-console.log(somma)
+console.log(somma);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -52,14 +52,13 @@ console.log(x);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let numero1 = 4;
-let sottrazione = numero1 -= x;
+let sottrazione = (numero1 -= x);
 console.log(sottrazione);
 
 /* ESERCIZIO 7
@@ -70,9 +69,9 @@ console.log(sottrazione);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let name1 = 'john';
-let name2 = 'John';
-const uguaglianza = name1 === name2;
+let name1 = "john";
+let name2 = "John";
+let uguaglianza = name1 === name2;
 console.log(uguaglianza);
 
-
+console.log(name1.toLowerCase() === name2.toLowerCase());
