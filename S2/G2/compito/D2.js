@@ -29,9 +29,8 @@ if (x !== 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let num3 = 60
-let risultato3 = num3 % 5
 
-if (risultato3 === 0) {
+if (num3 % 5 === 0) {
   console.log('Il numero è divisibile per 5')
 } else {
   console.log('Il numero non è divisibile per 5')
@@ -63,11 +62,9 @@ if (num1 == 8 || num2 == 8){
 let totalShoppingCart = 89;
 
 if (totalShoppingCart >= 50) {
-  console.log("Totale:" + totalShoppingCart);
-  console.log("Hai diritto alla spedizione gratuita");
+  console.log("Hai diritto alla spedizione gratuita! Il tuo totale è:" + totalShoppingCart);
 } else {
-  console.log("La spedizione è di 10 euro");
-  console.log(totalShoppingCart + 10);
+  console.log("Il tuo totale è di:" + (totalShoppingCart + 10));
 }
 
 /* ESERCIZIO 6
