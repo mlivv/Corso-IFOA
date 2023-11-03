@@ -26,7 +26,7 @@ let errore = document.getElementById('errore');
 function eventHandler() {
     leggiForm();
     if (anno >= 1900 && anno <= 2023) {
-        errore.innerHTML = '';
+        errore.innerHTML = '&nbsp';
         calcolaEta();
         verifica();
         scrivi();
@@ -51,3 +51,12 @@ function verifica() {
     console.log(stato);
 }
 
+function scrivi() {
+    document.getElementById('mioNome').innerHTML = 'Ciao ' + nome;
+    document.getElementById('miaVerifica').innerHTML = 'La tua età è ' + eta + '; sei ' + stato;
+}
+
+function cancellaForm( ) {
+   document.getElementById('nome').value = '';
+   document.getElementById('anno').value = '';
+}
