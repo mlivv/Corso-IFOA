@@ -124,12 +124,13 @@ console.log(es8());
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
-let nuovoArray = 0
 
-while (nuovoArray < numericArray.lenght){
-  numericArray[i].push(nuovoArray);
-  console.log(nuovoArray);
-}
+//let nuovoArray = 0
+
+//while (nuovoArray < numericArray.lenght){
+//  numericArray[i].push(nuovoArray);
+//  console.log(nuovoArray);
+//}
 
 
 /* ESERCIZIO 10
@@ -137,4 +138,3 @@ while (nuovoArray < numericArray.lenght){
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
