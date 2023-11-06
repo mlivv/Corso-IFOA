@@ -1,0 +1,21 @@
+/* Your styles here */
+body{
+    margin: 0 auto;
+    background-color: brown;
+}
+
+head, figure{
+    background-color: #222F3F;
+    margin:0 auto;
+    padding: 10px;
+    padding-left: 2em;
+}
+
+head, nav{
+    background-color: #364759;
+    padding: 1px;
+}
+
+head,nav,p{
+    
+}
