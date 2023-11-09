@@ -46,7 +46,7 @@ let num2 = 3
 
 if (num1 == 8 || num2 == 8){
   console.log('Il numero è uguale a 8')
-} else if ((num1 + num2) == 8 || (num1 + num2) == 8) {
+} else if ((num1 + num2) == 8 || (num1 - num2) == 8) {
   console.log('Il risultato è uguale a 8')
 } else {
   console.log('Il numero non è uguale a 8')
@@ -73,6 +73,7 @@ if (totalShoppingCart >= 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 const scontoBlackFriday = 20;
 let totaleScontato =
   totalShoppingCart - (totalShoppingCart * scontoBlackFriday) / 100;
@@ -96,12 +97,31 @@ if (totaleScontato > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let numero1 = 6
+let numero2 = 4
+let numero3 = 9
+
+if (numero1 < numero2 && numero2 < numero3){
+  console.log(numero3, numero2, numero1)
+} else if(numero3 < numero2 && numero2 < numero1){
+  console.log(numero1, numero2, numero3)
+} else (numero2 < numero3 && numero3 < numero1){
+   console.log(numero2, numero3, numero1)
+};
+
+
+
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let valore = 13;
 
+if (typeof valore === 'Number'){
+  console.log("Il valore e' un numero");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */

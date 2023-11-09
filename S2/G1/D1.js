@@ -24,7 +24,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let nome = "Milena";
+const nome = "Milena";
 console.log(nome);
 
 /* ESERCIZIO 3
@@ -32,18 +32,29 @@ console.log(nome);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let somma = 12 + 20;
+console.log (somma);
+
+
+/*
 let a = 12;
 let b = 20;
 let somma = a + b;
 console.log(somma);
+*/
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 12;
-console.log(x);
+
+let x = 12
+
+
+
+//let x = 12;
+// console.log(x);
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -51,15 +62,24 @@ console.log(x);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// let nome = "Livian";
+// console.log(nome)
+
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numero1 = 4;
-let sottrazione = (numero1 -= x);
-console.log(sottrazione);
+let nuovoNumero = 4;
+
+let sottrazione = x - 4;
+console.log (sottrazione);
+
+
+// let numero1 = 4;
+// let sottrazione = (numero1 -= x);
+// console.log(sottrazione);
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -68,10 +88,21 @@ console.log(sottrazione);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let name1 = "john";
+let name2 = 'John';
 
+if (name1 !== name2){
+  console.log('john e diverso da John')
+} else {
+  console.log('non sono diversi')
+};
+
+
+/*
 let name1 = "john";
 let name2 = "John";
 let uguaglianza = name1 === name2;
 console.log(uguaglianza);
 
 console.log(name1.toLowerCase() === name2.toLowerCase());
+*/
