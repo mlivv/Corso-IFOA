@@ -1,0 +1,42 @@
+.imgLeft {
+    float: left;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*es 2 non fatto*/
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+    body{
+        font-size: 1.2em;
+    }
+    header{
+        position: sticky;
+        top:0;
+    }
+
+    section h2{
+        position: absolute;
+        top: -13px;
+    }
+
+    .iconaViola{
+        width: 80px;
+        height: 80px;
+        background-color: rgb(154, 17, 154);
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        z-index: 1;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width:769px) {
+    
+}
