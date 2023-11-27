@@ -1,281 +1,279 @@
-
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* ---------INIZIO HEADER ----------*/
-header{
-    width: 100%;
+
+header {
+  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-nav{
-    display: flex;
-    background-color: #FFC017;
-    height: 80px;
-    justify-content: space-between;
-    padding-left: 6vh;
-    padding-right: 6vh;
+nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  width: auto;
 }
 
-nav div{
-    display: flex;
-    align-items: center;
+nav div {
+  display: flex;
+  align-items: center;
 }
 
-.testoADestra p{
-    margin-right: 40px;
-    font-size: 1em;
+.testoADestra p {
+  margin-right: 40px;
+  font-size: 1em;
 }
 
-.testoADestra button{
-    background-color: #191919;
-    color: white;
-    border: 0;
-    border-radius: 30px;
-    padding: 10px;
-    height: 40px;
-    width: 120px;
-    font-size: 1em;
+.testoADestra button {
+  background-color: #191919;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  height: 40px;
+  width: 120px;
+  font-size: 1em;
 }
 
-header hr{
-    margin: 0;
-    color: #191919;
+header hr {
+  margin: 0;
+  color: #191919;
 }
 
 /* --------- FINE HEADER ----------*/
 /* ---------INIZIO MAIN ----------*/
 
-.main{
-    display: flex;
-    background-color: #FFC017;
-    align-items: center;
-    justify-content: space-between;
+.main {
+  display: flex;
+  background-color: #ffc017;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.titolo{
-    margin-left: 5vh;
-    height: 100%;
-    width: 55vh;
+.titolo {
+  margin-left: 5vh;
+  height: 100%;
+  width: 55vh;
 }
 
-.boxLettere{
-    width: 55vh;
+.boxLettere {
+  width: 55vh;
 }
 
-.titolo h1{
-    font-family: 'Spectral', serif;
-    font-weight: 500;
-    font-size: 6em;
-    padding-bottom: 2.5vh;
+.titolo h1 {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-size: 6em;
+  padding-bottom: 2.5vh;
 }
 
-.titolo h2{
-    font-size: 1.5em;
-    width: 20em;
+.titolo h2 {
+  font-size: 1.5em;
+  width: 20em;
 }
 
-main hr{
-    margin: 0;
-    color: #191919;
+main hr {
+  margin: 0;
+  color: #191919;
 }
 
-.titolo button{
-    background-color: #191919;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 5vh;
-    border: 0;
-    border-radius: 30px;
-    padding: 10px;
-    height: 40px;
-    width: 200px;
+.titolo button {
+  background-color: #191919;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 5vh;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  height: 40px;
+  width: 200px;
 }
 
 /* ---------FINE MAIN ----------*/
 /* ---------INIZIO TRENDING BOX ----------*/
 
-.trendingBox{
-    margin: 5vh;
+.trendingBox {
+  margin: 5vh;
 }
 
 /* box - "trending on medium" */
-.trendingTitle{
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
+.trendingTitle {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
 }
 
-/* testo trending on medium - per distanziare*/ 
-.trendingTitle h3{
-    margin-left: 1em;
+/* testo trending on medium - per distanziare*/
+.trendingTitle h3 {
+  margin-left: 1em;
 }
 
-.trendingBox article{
-    width: 30vh;
-    display: flex;
-    margin-top: 1vh;
-    margin-bottom: 1.3vh;
+.trendingBox article {
+  width: 30vh;
+  display: flex;
+  margin-top: 1vh;
+  margin-bottom: 1.3vh;
 }
 
-/* singolo articolo */ 
-.inPrimoPiano{
-    display: flex;
+/* singolo articolo */
+.inPrimoPiano {
+  display: flex;
 }
 
-.numeroArticle{
-    padding-right:1em ;
-    font-size: 2em;
-    color: rgb(183, 181, 181);
-    font-weight: 700;
+.numeroArticle {
+  padding-right: 1em;
+  font-size: 2em;
+  color: rgb(183, 181, 181);
+  font-weight: 700;
 }
 
-.nomeAutore{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.nomeAutore {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.nomeAutore img{
-    border-radius: 30px;
+.nomeAutore img {
+  border-radius: 30px;
 }
 
-.nomeAutore p{
-    margin-left: 1vh;
-    font-size: small;
+.nomeAutore p {
+  margin-left: 1vh;
+  font-size: small;
 }
 
-.titoloArticolo{
-    font-size: 1em;
-    font-weight: 700;
+.titoloArticolo {
+  font-size: 1em;
+  font-weight: 700;
 }
 
-.dataDiPubblicazione{
-    margin-top: 1.3vh;
-    color: grey;
-    font-size:0.8em;
+.dataDiPubblicazione {
+  margin-top: 1.3vh;
+  color: grey;
+  font-size: 0.8em;
 }
 
-.trendingArticles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.trendingArticles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-section hr{
-    color: lightgrey;
+section hr {
+  color: lightgrey;
 }
 
 /* ----------- SEZIONE SECONDARIA ----------*/
 
-.boxSezioneSecondaria{
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+.boxSezioneSecondaria {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 
 /* -------------- DISCOVER MORE OF WHAT MATTERS TO YOU ---------------- */
 
-.discoverMore{
-    width: 300px;
+.discoverMore {
+  width: 300px;
 }
 
-.discoverMoreTitle{
-    font-weight: 700;
-    padding-bottom: 10px;
+.discoverMoreTitle {
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 
-.discoverOptions{
-    display: flex;
-    flex-wrap: wrap;
+.discoverOptions {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.discoverLink{
-    background-color: #F2F2F2;
-    color: black;
-    padding: 12px;
-    border-radius: 20px;
-    margin:5px;
-    font-size: 0.9em;
-    text-decoration: none;
+.discoverLink {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 
-.seeMoreTopicsLink{
-    color: green;
-    text-decoration: none;
+.seeMoreTopicsLink {
+  color: green;
+  text-decoration: none;
 }
 
-.seeMoreTopicsLink:hover{
-    color:black;
+.seeMoreTopicsLink:hover {
+  color: black;
 }
 
-.boxLinks{
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
+.boxLinks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
-.otherLink{
-    text-decoration: none;
-    color: grey;
-    font-size: small;
-    padding: 5px;
+.otherLink {
+  text-decoration: none;
+  color: grey;
+  font-size: small;
+  padding: 5px;
 }
 /* ------------------ ARTICOLI --------------------- */
-.articoliSecondari{
-    width: 52%;
+.articoliSecondari {
+  width: 52%;
 }
 
-.sezioneLateraleSinistra{
-    
+.singoloArticoloSecondario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-.singoloArticoloSecondario{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    margin-bottom: 15px;
-    
-}
-
-.testoArticleSecondario{
-    width:32vh;
-    height: 14vh;
+.testoArticleSecondario {
+  width: 32vh;
+  height: 14vh;
 }
 
 /* autore */
-.autoreArticoloSecondario{
-    display: flex;
-    margin-bottom:1vh;
-    align-items: center;
-    font-weight: 600;
+.autoreArticoloSecondario {
+  display: flex;
+  margin-bottom: 1vh;
+  align-items: center;
+  font-weight: 600;
 }
 
-.autoreArticoloSecondario p{
-    margin-left: 15px;
-    font-size: small;
+.autoreArticoloSecondario p {
+  margin-left: 15px;
+  font-size: small;
 }
 
-.autoreArticoloSecondario img{
-    border-radius: 20px;
+.autoreArticoloSecondario img {
+  border-radius: 20px;
 }
 
 /* testo */
-.titoloArticoloSecondario{
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 0.8vh;
+.titoloArticoloSecondario {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 0.8vh;
 }
 
-.introduzioneTesto{
-    color: gray;
-    margin-bottom: 1vh;
+.introduzioneTesto {
+  color: gray;
+  margin-bottom: 1vh;
 }
 
-.dataDiPubblicazioneTS p{
-    font-size: small;
-    margin-top: 4px;
-    color: gray;
+.dataDiPubblicazioneTS p {
+  font-size: small;
+  margin-top: 4px;
+  color: gray;
 }
