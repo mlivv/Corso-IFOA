@@ -224,25 +224,25 @@ section hr{
 }
 /* ------------------ ARTICOLI --------------------- */
 .articoliSecondari{
-    border: 1px solid purple;
-    width: 50%;
+    width: 52%;
 }
 
 .sezioneLateraleSinistra{
-    border: 1px solid blue;
+    
 }
 
 .singoloArticoloSecondario{
-    border:2px solid salmon;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
+    margin-bottom: 15px;
+    
 }
 
-.testoArticle{
+.testoArticleSecondario{
     width:32vh;
-    height: 12vh;
+    height: 14vh;
 }
 
 /* autore */
@@ -266,9 +266,16 @@ section hr{
 .titoloArticoloSecondario{
     font-size: 1.2em;
     font-weight: 600;
-    margin-bottom: 1vh;
+    margin-bottom: 0.8vh;
 }
 
 .introduzioneTesto{
+    color: gray;
+    margin-bottom: 1vh;
+}
+
+.dataDiPubblicazioneTS p{
+    font-size: small;
+    margin-top: 4px;
     color: gray;
 }
