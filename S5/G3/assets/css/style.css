@@ -63,37 +63,66 @@ header nav ul{
 
 /* ------------- NAVIGATION BAR -------------*/
 
-.navBar{
+.containerNav{
     background-color: #FEF7E2;
     border-radius: 100px;
     height: 100px;
-    width: 576px;
-    /*align-items: center;*/
+
 }
 
 .navBtns{
     display: flex;
     justify-content: space-around;
-    padding-left: 30px;
-    padding-right: 30px;
-
+    align-items: center;
 }
 
 .navBtnSingolo{
     background-color: #F3DF85;
     border-radius: 30px;
-    border: 0;
     color: #652400;
-    height: 35px;
-    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#grandeBtn{
+    
+    background-color: #F3DF85;
+    border-radius: 30px;
 
 }
 
-.piccoloBtn{
 
+/*
+.containerNav{
+    background-color: #FEF7E2;
+    border-radius: 100px;
+    height: 100px;
+    width: auto;
+    display: flex;
 }
 
-.grandeBtn{
-    font-size: 1.5em;
-
+.navBtns{
+    display: flex;
+    align-items: center;
+    
 }
+
+.navBtnSingolo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3DF85;
+    border-radius: 30px;
+    color: #652400;
+    height: 30px;
+    font-size: smaller;
+}
+
+#grandeBtn{
+    display: flex;
+    background-color: #F3DF85;
+    border-radius: 30px;
+}
+
+*/
