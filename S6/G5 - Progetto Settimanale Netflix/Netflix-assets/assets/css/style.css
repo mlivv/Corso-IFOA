@@ -1,28 +1,36 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    background-color: #141414;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: #141414;
 }
 
-
-@media (min-width:991px) {
-    #containerFooter{
-        padding-left:15%;
-        padding-right: 15%;
-}  
+@media (min-width: 991px) {
+  #containerFooter {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
-#contMain{
+#bottoniFormProfilo {
+  background-color: #333333;
+}
+
+#footerProfilo {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+@media (min-width: 0px) and (max-width: 712px) {
+  #contMainProfilo {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (min-width: 712px) {
+  #contMainProfilo {
     margin-left: 30%;
     margin-right: 30%;
-}
-
-#bottoniFormProfilo{
-    background-color: #333333 ;
-}
-
-#footerProfilo{
-    margin-left: 30%;
-    margin-right: 30%;
+  }
 }
