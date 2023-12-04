@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #141414;
+}
+
+#containerFooter{
+    padding-left: 15em;
+    padding-right: 15em;
+    
+}
+
+#contMain{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#bottoniFormProfilo{
+    background-color: #333333 ;
+}
+
+#footerProfilo{
+    margin-left: 30%;
+    margin-right: 30%;
+}

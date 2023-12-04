@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina profilo Netflix - Progetto settimanale</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Netflix-assets/assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="./Netflix-assets/assets/netflix_logo.png"
+          width="100"
+          height="40"
+        />
+      </div>
+    </header>
+
+    <main id="mainPaginaProfilo">
+      <div id="contMain">
+        <div class="row text-center mt-5">
+          <div class="col-12">
+            <h1 class="text-light display-2">Edit Profile</h1>
+          </div>
+          <hr class="text-light" id="hrMainProfilo" />
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="./Netflix-assets/assets/avatar.png"
+              width="100%"
+              alt="immagine profilo"
+            />
+          </div>
+          <div class="col-8">
+            <form>
+              <!--nome-->
+              <input
+                type="name"
+                class="form-control bg-secondary border-secondary text-light"
+              />
+              <!--bottone-->
+              <label for="dropdown" class="form-label text-light mt-3"
+                >Languages</label
+              >
+              <div class="dropdown">
+                <button
+                  class="btn btn-dark dropdown-toggle btn-sm text-light"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Italiano</a></li>
+                  <li><a class="dropdown-item" href="#">Espanol</a></li>
+                </ul>
+              </div>
+              <hr class="text-light" />
+              <!--maturity settings-->
+              <p class="text-light">Maturity Settings:</p>
+              <button
+                class="btn-sm border border-0 text-light p-1 small font-monospace"
+                id="bottoniFormProfilo"
+              >
+                ALL MATURITY RATINGS
+              </button>
+
+              <p class="small text-light mt-3">
+                Show titles of
+                <span class="fw-bold">all maturity ratings</span> for this
+                profile
+              </p>
+
+              <button class="btn text-secondary border border-secondary">
+                EDIT
+              </button>
+              <hr class="text-light" />
+              <p class="text-light">Autoplay controls</p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label small text-light"
+                  for="flexCheckDefault"
+                >
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label text-light small"
+                  for="flexCheckChecked"
+                >
+                  Autoplay previews while browsing on all devices.
+                </label>
+              </div>
+            </form>
+          </div>
+          <hr class="text-light mt-3" />
+        </div>
+      </div>
+    </main>
+    <footer id="footerProfilo">
+      <div class="d-flex justify-content-between mt-1 mb-5">
+        <button class="btn text-dark border border-0 bg-light">SAVE</button>
+        <button class="btn text-secondary border border-secondary">
+          CANCEL
+        </button>
+        <button class="btn text-secondary border border-secondary">
+          DELETE PROFILE
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
