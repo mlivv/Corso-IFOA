@@ -5,10 +5,12 @@ body{
     background-color: #141414;
 }
 
-#containerFooter{
-    padding-left: 15em;
-    padding-right: 15em;
-    
+
+@media (min-width:991px) {
+    #containerFooter{
+        padding-left:15%;
+        padding-right: 15%;
+}  
 }
 
 #contMain{
