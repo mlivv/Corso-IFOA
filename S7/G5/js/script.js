@@ -8,38 +8,63 @@ const headers = {
 
 let products = [];
 
-async function getProducts(){
-    try{
-        const response = fetch(url,{
-            // method:"GET",
-            headers:headers
-        })
-        .then(
-            (data)=> {console.log(data)},
-            (error)=> {console.log(error)}
-            )
-       //   const data = await response.json();    
-  //      console.log(data);
-    } catch(error){
-        console.log(error);
-    }
-};
-console.log(getProducts());
+
+function getProducts() {
+    fetch(url, {
+        headers: headers,
+        }
+    )
+    .then(response => response.json())
+    .then((data) => {
+        products = data;
+        createCards(data);
+        console.log(data);
+    })
+}
+
+getProducts();
 
 /*
-function getProducts(){
-    fetch(url),{
-        headers: headers,
+const sendData = (id) => {
+    const newRecord = {
+        "name": document.getElementById('name').value,
+        "brand": document.getElementById('brand').value,
+        "description": document.getElementById('description').value,
+        "price": document.getElementById('price').value,
     }
-    .then(
-        (response => response.json())
-    )
-    .then ((data))
-}
-/*
-console.log(getProducts("product"));
-function createCards(products){
-    let row = document.querySelector('row');
-    row.innerHTML = "";
+    console.log(newRecord);
+    fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(newRecord)
+    })
+    .then(response => response.json())
+    .then((data) => {
+        products.push(data)
+     })
 }
 */
+
+function createCards(products){
+    let row = document.getElementById('row');
+    row.innerHTML = "";
+    
+    products.forEach(element => {
+        let newRow = `
+        <div class="col-4">
+            <div class="card mb-4 shadow-sm">
+            <img src="https://img.gkbcdn.com/p/2019-01-14/nokia-3110-2-4-inch-mini-phone-blue-1571972672478._w500_p1_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${element.name} - ${element.brand}</h5>
+                    <p class="card-text">${element.description}</p>
+                    <p class="card-text small ">${element.price} Euro</p>
+                    <a href="#" class="btn btn-info" role="button">Dettagli prodotto</a>
+                </div>
+            </div>
+        </div>
+        `
+
+        row.innerHTML += newRow;
+    });
+}
+
