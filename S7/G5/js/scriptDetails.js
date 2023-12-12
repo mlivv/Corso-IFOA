@@ -16,7 +16,6 @@ function getProducts() {
     .then(response => response.json())
     .then((data) => {
         products = data;
-        createCards(data);
         console.log(data);
     })
 }
@@ -24,12 +23,12 @@ function getProducts() {
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
 
-const showDetailsProduct = () =>{
-    fetch(url + id, {
+const detailsProduct = () =>{
+    fetch(url, {
         headers: headers,
     })
 .then(res => res.json())
-.then(data => populateForm(products, data))
+.then(data => populateForm(data))
 };
 
 function populateForm(products){
@@ -49,6 +48,6 @@ function populateForm(products){
     });  
     };
 
-window.onload = showDetailsProduct();
+window.onload = detailsProduct();
 
 // niente prof, ho fatto del mio meglio D: 
