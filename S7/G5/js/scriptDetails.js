@@ -16,62 +16,39 @@ function getProducts() {
     .then(response => response.json())
     .then((data) => {
         products = data;
+        createCards(data);
         console.log(data);
     })
 }
 
+const params = new URLSearchParams(location.search);
+const id = params.get("id");
 
+const showDetailsProduct = () =>{
+    fetch(url + id, {
+        headers: headers,
+    })
+.then(res => res.json())
+.then(data => populateForm(products, data))
+};
 
-// per bottone 'salva'
-
-async function sendData(){
- const newRecord = {
-    "name": document.getElementById('inputName').value,
-    "brand": document.getElementById('inputBrand').value,
-    "description": document.getElementById('inputDescription').value,
-    "price": document.getElementById('inputPrice').value,
-    "imageUrl": document.getElementById('inputImageUrl').value,
- }
- let response = await fetch(url, {
-    headers: headers,
- })
-}
-// fine """bottone""" salva
-
-
-function fillForm(products){
-    let nameInput = document.getElementsByName('name');
-    if (name === undefined){
-
-    }
-    
-}
-
-
-
-
-/*
-
-function viewCardDetails(products){
-    let row = document.getElementById('row');
-    row.innerHTML = "";
+function populateForm(products){
+    const form = document.getElementById('form');
+    form.innerHTML = "";
 
     products.forEach(element => {
-    let newRowDetails = `
-    <div class="col-12">
-        <div class="card mb-4 shadow-sm">
-            <img src="https://img.gkbcdn.com/p/2019-01-14/nokia-3110-2-4-inch-mini-phone-blue-1571972672478._w500_p1_.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${element.name} - ${element.brand}</h5>
-                <p class="card-text">${element.description}</p>
-                <p class="card-text small ">${element.price} Euro</p>
-                <a href="./details.html" class="btn btn-info" role="button">Dettagli prodotto</a>
-            </div>
+        `
+        <div class=p-5>
+            <h5>Nome prodotto: ${data.name}</h5>
+            <p>Descrizione: ${data.description}</p>
+            <p>Brand: ${data.brand}</p>
+            <p>Prezzo: ${data.price}€</p>
         </div>
-    </div>
-    `
-    row.innerHTML += newRowDetails;
-    });
-}
+        `
+        form.innerHTML += newForm;
+    });  
+    };
 
-*/
+window.onload = showDetailsProduct();
+
+// niente prof, ho fatto del mio meglio D: 
