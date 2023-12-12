@@ -22,28 +22,26 @@ function getProducts() {
     })
 }
 
-getProducts();
+const params = new URLSearchParams(location.search)
+    const id = params.get("id")
 
-/*
-const sendData = (id) => {
+window.onload = getProducts();
+
+//per bottone 'salva'
+
+async function sendData(){
     const newRecord = {
-        "name": document.getElementById('name').value,
-        "brand": document.getElementById('brand').value,
-        "description": document.getElementById('description').value,
-        "price": document.getElementById('price').value,
+       "name": document.getElementById('inputName').value,
+       "brand": document.getElementById('inputBrand').value,
+       "description": document.getElementById('inputDescription').value,
+       "price": document.getElementById('inputPrice').value,
+       "imageUrl": document.getElementById('inputImageUrl').value,
     }
-    console.log(newRecord);
-    fetch(url, {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify(newRecord)
+    let response = await fetch(url, {
+       headers: headers,
+       body: JSON.stringify(newRecord)
     })
-    .then(response => response.json())
-    .then((data) => {
-        products.push(data)
-     })
-}
-*/
+   }
 
 function createCards(products){
     let row = document.getElementById('row');
@@ -58,7 +56,7 @@ function createCards(products){
                     <h5 class="card-title">${element.name} - ${element.brand}</h5>
                     <p class="card-text">${element.description}</p>
                     <p class="card-text small ">${element.price} Euro</p>
-                    <a href="#" class="btn btn-info" role="button">Dettagli prodotto</a>
+                    <a href="./details.html" class="btn btn-info" role="button">Dettagli prodotto</a>
                 </div>
             </div>
         </div>
@@ -67,4 +65,3 @@ function createCards(products){
         row.innerHTML += newRow;
     });
 }
-
